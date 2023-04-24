@@ -1,9 +1,7 @@
 
 import * as React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { orange, purple } from '@mui/material/colors';
-import Button from '@mui/material/Button';
-import { CssBaseline } from '@mui/material';
+import { CssBaseline, Typography } from '@mui/material';
 
 const theme = createTheme({
   palette: {
@@ -32,6 +30,104 @@ const theme = createTheme({
       main: "#FFFFFF"
     }
   },
+  typography:{
+    h1: {
+      fontFamily: "Montserrat",
+      fontSize: "58px",
+      fontWeight: "800",
+      lineHeight: "80px",
+      letterSpacing: "0.2px",
+      fontStyle: "normal",
+    },
+    h2: {
+      fontFamily: "Montserrat",
+      fontSize: "40px",
+      fontWeight: "700",
+      lineHeight: "57px",
+      letterSpacing: "0.2px",
+      fontStyle: "normal",
+    },
+    h3: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: "700",
+      fontSize: "24px",
+      lineHeight: "32px",
+      letterSpacing: "0.1px", 
+    },
+    h4: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: "500",
+      fontSize: "20px",
+      lineHeight: "30px",
+      letterSpacing: "0.2px",
+    },
+    h5: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: "700",
+      fontSize: "16px",
+      lineHeight: "24px",
+      letterSpacing: "0.1px",
+    },
+    h6: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: "600",
+      fontSize: "14px",
+      lineHeight: "24px",
+      letterSpacing: "0.2px",
+    },
+    btn_text: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: "700",
+      fontSize: "28px",
+      lineHeight: "32px",
+      letterSpacing: "0.2px",
+    },
+    btn_text: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: "700",
+      fontSize: "28px",
+      lineHeight: "32px",
+      letterSpacing: "0.2px",
+    },
+    mobile_menu: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: "400",
+      fontSize: "30px",
+      lineHeight: "45px",
+      letterSpacing: "0.2px",
+    },
+    paragraph: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: "500",
+      fontSize: "14px",
+      lineHeight: "20px",
+      letterSpacing: "0.2px",
+    },
+    list: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: "400",
+      fontSize: "20px",
+      lineHeight: "30px",
+      letterSpacing: "0.2px",
+    },
+    link: {
+      fontFamily: "Montserrat",
+      fontStyle: "normal",
+      fontWeight: "600",
+      fontSize: "14px",
+      lineHeight: "24px",
+      letterSpacing: "0.2px",
+    },
+  }
 });
 
 export default function Palette() {
@@ -39,7 +135,9 @@ export default function Palette() {
     <ThemeProvider theme={theme}>
       <CssBaseline/>
         <div>
-            
+            <Typography variant="h1" >Hello</Typography>
+            <Typography variant="h2" color="secondary2">Hello</Typography>
+
         </div>
     </ThemeProvider>
   );
