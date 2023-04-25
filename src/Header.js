@@ -11,11 +11,13 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import Stack from "@mui/material/Stack";
+
 
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-function ResponsiveAppBar() {
+function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -35,26 +37,11 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" color="transparent">
-      {/* done  */}
-      <Container maxWidth="xl">
-        {/* done  */}
-        <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          {/* done  */}
-          {/* 1-block  */}
-          <Typography sx={{ display: { xs: "none", md: "flex" } }}>
-            LOGOff
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
+    <AppBar position="static" color="transparent" elevation={0} sx={{px:"0", maxWidth: "1046px", mx:"auto"}}>
+      <Container sx={{px:"0px", maxWidth: "1046px"}}>
+        <Toolbar >
+          <Box sx={{ flexGrow: 1, display: {maxWidth: "1046px", xs: "flex", md: "none" } }}>
+            <IconButton size="large" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" onClick={handleOpenNavMenu} color="inherit">
               <MenuIcon />
             </IconButton>
             <Menu
@@ -76,67 +63,43 @@ function ResponsiveAppBar() {
               }}
             >
               <MenuItem onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Home</Typography>
-                    </MenuItem>
-                    <MenuItem onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Product</Typography>
-                    </MenuItem>
-                    <MenuItem onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Pricing</Typography>
-                    </MenuItem>
-                    <MenuItem onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Contact</Typography>
-                    </MenuItem>
+              <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Home</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+              <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Product</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+              <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Pricing</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+              <Typography textAlign="center" variant='link' sx={{color: "text_color2.main"}}>Contact</Typography>
+              </MenuItem>
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
-          {/* 2-block  */}
-          {/* <Typography sx={{ display: { xs: "flex", md: "none" }, flexGrow: 1 }}>
-            LOGO
+          <Typography variant="h3" sx={{ display: "flex", flexGrow: {xs:"1", md: "0"}, mr: 2, color: "text_color.main" }}>
+            Relvise
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
+          <Box sx={{pl: 15,  flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              <Button 
+                onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
+                <Typography variant="link" >Home</Typography>
               </Button>
-            ))}
+              <Button
+                onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
+              <Typography variant="link">Product</Typography>
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
+              <Typography variant="link">Pricing</Typography>
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu} sx={{ color: "text_color2.main",my: 2, display: "block", textTransform: "none" }}>
+              <Typography variant="link">Contact</Typography>
+              </Button>
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right"
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right"
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
-export default ResponsiveAppBar;
+export default Header;

@@ -5,7 +5,7 @@ import { CssBaseline, Typography, Paper, AppBar, Container, Toolbar, IconButton,
 import { Menu } from '@mui/icons-material'
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import ResponsiveAppBar from './Header';
+import Header from './Header';
 
 
 
@@ -133,9 +133,9 @@ export default function App() {
   
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline/>
+      {/* <CssBaseline/> */}
         <div>
-          <ResponsiveAppBar />
+          <Header />
         </div>
     </ThemeProvider>
     
