@@ -1,7 +1,14 @@
 
 import * as React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { CssBaseline, Typography } from '@mui/material';
+import { CssBaseline, Typography, Paper, AppBar, Container, Toolbar, IconButton, Box } from '@mui/material';
+import { Menu } from '@mui/icons-material'
+import MenuIcon from "@mui/icons-material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import ResponsiveAppBar from './Header';
+
+
+
 
 const theme = createTheme({
   palette: {
@@ -87,14 +94,6 @@ const theme = createTheme({
       lineHeight: "32px",
       letterSpacing: "0.2px",
     },
-    btn_text: {
-      fontFamily: "Montserrat",
-      fontStyle: "normal",
-      fontWeight: "700",
-      fontSize: "28px",
-      lineHeight: "32px",
-      letterSpacing: "0.2px",
-    },
     mobile_menu: {
       fontFamily: "Montserrat",
       fontStyle: "normal",
@@ -130,15 +129,15 @@ const theme = createTheme({
   }
 });
 
-export default function Palette() {
+export default function App() {
+  
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline/>
         <div>
-            <Typography variant="h1" >Hello</Typography>
-            <Typography variant="h2" color="secondary2">Hello</Typography>
-
+          <ResponsiveAppBar />
         </div>
     </ThemeProvider>
+    
   );
 }
