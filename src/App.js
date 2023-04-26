@@ -6,11 +6,11 @@ import { Menu } from '@mui/icons-material'
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Header from './Header';
+import HeadContainer from './HeadContainer';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import background from "./background.png"
-import { flexbox } from '@mui/system';
 
 
 
@@ -51,6 +51,7 @@ const theme = createTheme({
       lineHeight: "80px",
       letterSpacing: "0.2px",
       fontStyle: "normal",
+      textTransform: "none",
     },
     h2: {
       fontFamily: "Montserrat",
@@ -59,6 +60,7 @@ const theme = createTheme({
       lineHeight: "57px",
       letterSpacing: "0.2px",
       fontStyle: "normal",
+      textTransform: "none",
     },
     h3: {
       fontFamily: "Montserrat",
@@ -67,6 +69,7 @@ const theme = createTheme({
       fontSize: "24px",
       lineHeight: "32px",
       letterSpacing: "0.1px", 
+      textTransform: "none",
     },
     h4: {
       fontFamily: "Montserrat",
@@ -75,6 +78,7 @@ const theme = createTheme({
       fontSize: "20px",
       lineHeight: "30px",
       letterSpacing: "0.2px",
+      textTransform: "none",
     },
     h5: {
       fontFamily: "Montserrat",
@@ -83,6 +87,7 @@ const theme = createTheme({
       fontSize: "16px",
       lineHeight: "24px",
       letterSpacing: "0.1px",
+      textTransform: "none",
     },
     h6: {
       fontFamily: "Montserrat",
@@ -91,14 +96,17 @@ const theme = createTheme({
       fontSize: "14px",
       lineHeight: "24px",
       letterSpacing: "0.2px",
+      textTransform: "none",
+
     },
     btn_text: {
       fontFamily: "Montserrat",
       fontStyle: "normal",
       fontWeight: "700",
-      fontSize: "28px",
-      lineHeight: "32px",
+      fontSize: "14px",
+      lineHeight: "28px",
       letterSpacing: "0.2px",
+      textTransform: "none",
     },
     mobile_menu: {
       fontFamily: "Montserrat",
@@ -107,6 +115,7 @@ const theme = createTheme({
       fontSize: "30px",
       lineHeight: "45px",
       letterSpacing: "0.2px",
+      textTransform: "none",
     },
     paragraph: {
       fontFamily: "Montserrat",
@@ -115,6 +124,7 @@ const theme = createTheme({
       fontSize: "14px",
       lineHeight: "20px",
       letterSpacing: "0.2px",
+      textTransform: "none",
     },
     list: {
       fontFamily: "Montserrat",
@@ -123,6 +133,7 @@ const theme = createTheme({
       fontSize: "20px",
       lineHeight: "30px",
       letterSpacing: "0.2px",
+      textTransform: "none",
     },
     link: {
       fontFamily: "Montserrat",
@@ -131,9 +142,10 @@ const theme = createTheme({
       fontSize: "14px",
       lineHeight: "24px",
       letterSpacing: "0.2px",
+      textTransform: "none",
     },
-  }
-});
+  },
+  });
 
 export default function App() {
   
@@ -143,6 +155,7 @@ export default function App() {
         <div>
           <Header />
           <Container position="absolute" maxWidth="100%"  sx={{ height: "800px", background: {sm: `url(${background}) 100% 100% / cover no-repeat`, xs: `url(${background}) 80% 100% / cover no-repeat`}}} >
+          <HeadContainer/>
           </Container>
         </div>
     </ThemeProvider>

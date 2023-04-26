@@ -76,7 +76,7 @@ function Header() {
               </MenuItem>
             </Menu>
           </Box>
-          <Typography variant="h3" sx={{ display: "flex", flexGrow: {xs:"1", md: "0"}, mr: 2, color: "text_color.main" }}>
+          <Typography variant="h3" sx={{ display: "flex", flexGrow: {xs:"1", md: "0"}, mr: 2, color:"text_color.main"}}>
             Relvise
           </Typography>
           <Box sx={{pl: 15,  flexGrow: 1, display: { xs: "none", md: "flex" } }}>
