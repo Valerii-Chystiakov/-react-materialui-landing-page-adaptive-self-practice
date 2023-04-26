@@ -37,10 +37,10 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" color="transparent" elevation={0} sx={{px:"0", maxWidth: "1046px", mx:"auto"}}>
+    <AppBar position="absolute" color="transparent" elevation={0} sx={{px:0, width: "100%", mx:"auto"}}>
       <Container sx={{px:"0px", maxWidth: "1046px"}}>
         <Toolbar >
-          <Box sx={{ flexGrow: 1, display: {maxWidth: "1046px", xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: {xs: "flex", md: "none" } }}>
             <IconButton size="large" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" onClick={handleOpenNavMenu} color="inherit">
               <MenuIcon />
             </IconButton>

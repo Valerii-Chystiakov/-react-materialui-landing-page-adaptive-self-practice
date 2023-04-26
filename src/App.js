@@ -6,6 +6,12 @@ import { Menu } from '@mui/icons-material'
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Header from './Header';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import background from "./background.png"
+import { flexbox } from '@mui/system';
+
 
 
 
@@ -136,6 +142,8 @@ export default function App() {
       {/* <CssBaseline/> */}
         <div>
           <Header />
+          <Container position="absolute" maxWidth="100%"  sx={{ height: "800px", background: {sm: `url(${background}) 100% 100% / cover no-repeat`, xs: `url(${background}) 80% 100% / cover no-repeat`}}} >
+          </Container>
         </div>
     </ThemeProvider>
     
