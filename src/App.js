@@ -117,7 +117,7 @@ const theme = createTheme({
       letterSpacing: "0.2px",
       textTransform: "none",
     },
-    paragraph: {
+    p: {
       fontFamily: "Montserrat",
       fontStyle: "normal",
       fontWeight: "500",
