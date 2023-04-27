@@ -14,7 +14,7 @@ import HeadIcon3 from "./img/Head/HeadIcon3.svg"
 export default class HeadContainer extends Component {
   render() {
     return (
-        <Container sx={{px: "0px", pt: 23,  maxWidth:"1046px"}} >
+        <Container sx={{px: "0px", mt: 23,  maxWidth:"1046px"}} >
             <Typography maxWidth="509px" variant="h1" sx={{color:"text_color.main"}}>Finance and Consultancy Solution</Typography>
             <Typography maxWidth="380px" variant="h4" sx={{pt: 4,color:"text_color2.main"}}>We know how large objects will act, but things on a small scale.</Typography>
             <Stack direction="row" spacing={2} sx={{mt: 4}}>
