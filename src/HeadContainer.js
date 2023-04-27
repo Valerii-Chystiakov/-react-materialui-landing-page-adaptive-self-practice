@@ -14,7 +14,7 @@ import HeadIcon3 from "./img/Head/HeadIcon3.svg"
 export default class HeadContainer extends Component {
   render() {
     return (
-        <Container sx={{px: "0px", mt: 23,  maxWidth:"1046px"}} >
+        <Container sx={{px: "0px", pt: 23,  maxWidth:"1046px"}} >
             <Typography maxWidth="509px" variant="h1" sx={{color:"text_color.main"}}>Finance and Consultancy Solution</Typography>
             <Typography maxWidth="380px" variant="h4" sx={{pt: 4,color:"text_color2.main"}}>We know how large objects will act, but things on a small scale.</Typography>
             <Stack direction="row" spacing={2} sx={{mt: 4}}>
@@ -33,9 +33,8 @@ export default class HeadContainer extends Component {
                         alt={"tool-box-icon"}
                         loading="lazy"
                     />
-                    <Typography color="textSecondary">
-                        content here
-                    </Typography>
+                    <Typography variant="h3" sx={{color: "text_color.main", mt: 1}}>Environmental Consulting </Typography>
+                    <Typography variant="p" sx={{color: "text_color2.main", mt: 1}}>We focus on ergonomics and meeting you where you work.</Typography>
                 </CardContent>
             </Card>
             <Card elevation={1} sx={{width: "330px"}}>
