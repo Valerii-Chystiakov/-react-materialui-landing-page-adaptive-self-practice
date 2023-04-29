@@ -147,8 +147,8 @@ export default function App() {
     <ThemeProvider theme={theme}>
       {/* <CssBaseline/> */}
         <div>
-          <Header />
-          <Container position="absolute" maxWidth="100%"  sx={{ height: "800px", background: {sm: `url(${background}) 100% 100% / cover no-repeat`, xs: `url(${background}) 80% 100% / cover no-repeat`}}} >
+          <Header/>
+          <Container bgcolor="#FA0000" position="absolute" maxWidth="100%"  sx={{height: "800px", background: {sm: `url(${background}) 100% 100% / cover no-repeat`, xs: `url(${background}) 80% 100% / cover no-repeat`}}} >
           <HeadContainer/>
           </Container>
           <Features/>

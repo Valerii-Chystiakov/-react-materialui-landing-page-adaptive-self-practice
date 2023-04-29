@@ -30,7 +30,7 @@ export default class HeadContainer extends Component {
                 <CardContent sx={{px:"40px", py:"35px"}}>
                     <img
                         src={`${HeadIcon1}`}
-                        alt={"tool-box-icon"}
+                        alt={"HeadIcon1"}
                         loading="lazy"
                     />
                     <Typography variant="h3" sx={{color: "text_color.main", mt: 1}}>Environmental Consulting </Typography>
@@ -41,7 +41,7 @@ export default class HeadContainer extends Component {
                 <CardContent sx={{px:"40px", py:"35px"}}>
                     <img
                         src={`${HeadIcon2}`}
-                        alt={"tool-box-icon"}
+                        alt={"HeadIcon2"}
                         loading="lazy"
                     />
                     <Typography variant="h3" sx={{color: "text_color.main", mt: 1}}>Finance and consultancy </Typography>
@@ -52,7 +52,7 @@ export default class HeadContainer extends Component {
                 <CardContent sx={{px:"40px", py:"35px"}}>
                     <img
                         src={`${HeadIcon3}`}
-                        alt={"tool-box-icon"}
+                        alt={"HeadIcon3"}
                         loading="lazy"
                     />
                     <Typography variant="h3" sx={{color: "text_color_light.main", mt: 1}}>Financial Services Consulting</Typography>
