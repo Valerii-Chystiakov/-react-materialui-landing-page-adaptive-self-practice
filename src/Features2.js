@@ -11,10 +11,10 @@ import FeatureIcon4 from "./img/Features/FeatureIcon4.svg"
 
 
 
-export default class Features extends Component {
+export default class Features2 extends Component {
   render() {
     return (
-      <Container maxWidth="1046px" sx={{mt: {xs: "660px", sm: "660px",md: "130px"}, pb: 10, backgroundColor: "#FAFAFA" }}>
+      <Container maxWidth="1046px" sx={{mt: 15, pb: 10, backgroundColor: "#FAFAFA" }}>
         <Container>
           <Typography variant="h2" sx={{pt: 9,textAlign: "center",color: "text_color.main"}}>Designing Better Experience</Typography>
           <Typography maxWidth="510px" sx={{ fontFamily: "Montserrat",      fontStyle: "normal",      fontWeight: "500",      fontSize: "14px",      lineHeight: "20px",      letterSpacing: "0.2px",  textTransform: "none", mt:1, mx:"auto", textAlign: "center",color: "text_color2.main"}}>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</Typography>
@@ -45,7 +45,7 @@ export default class Features extends Component {
                     </CardContent>
                 </Card>
               </Stack>
-              <Stack direction="row" sx={{width: {sm:"100%", md:"50%"}, mb: 4 ,justifyContent: "space-evenly"}}>
+              <Stack direction="row" sx={{width: {sm:"100%", md:"50%"}, justifyContent: "space-evenly"}}>
                 <Card elevation={1} sx={{width: "240px"}}>
                     <CardContent sx={{display:"flex", flexFlow: "column", px:"40px", py:"35px"}}>
                         <img width={"48px"}
