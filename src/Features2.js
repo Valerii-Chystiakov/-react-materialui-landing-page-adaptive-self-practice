@@ -4,10 +4,11 @@ import Typography from '@mui/material/Typography'
 import Stack from '@mui/material/Stack'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
-import FeatureIcon1 from "./img/Features/FeatureIcon1.svg"
-import FeatureIcon2 from "./img/Features/FeatureIcon2.svg"
-import FeatureIcon3 from "./img/Features/FeatureIcon3.svg"
-import FeatureIcon4 from "./img/Features/FeatureIcon4.svg"
+import CardMedia from '@mui/material/CardMedia'
+import FeatureImg1 from "./img/Features2/FeatureImg1.jpg"
+import FeatureImg2 from "./img/Features2/FeatureImg2.jpg"
+import FeatureImg3 from "./img/Features2/FeatureImg3.jpg"
+import FeatureImg4 from "./img/Features2/FeatureImg4.jpg"
 
 
 
@@ -16,59 +17,72 @@ export default class Features2 extends Component {
     return (
       <Container maxWidth="1046px" sx={{mt: 15, pb: 10, backgroundColor: "#FAFAFA" }}>
         <Container>
-          <Typography variant="h2" sx={{pt: 9,textAlign: "center",color: "text_color.main"}}>Designing Better Experience</Typography>
-          <Typography maxWidth="510px" sx={{ fontFamily: "Montserrat",      fontStyle: "normal",      fontWeight: "500",      fontSize: "14px",      lineHeight: "20px",      letterSpacing: "0.2px",  textTransform: "none", mt:1, mx:"auto", textAlign: "center",color: "text_color2.main"}}>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</Typography>
+          <Typography variant="h2" sx={{textAlign: "center",color: "text_color.main"}}>Practice Advice</Typography>
+          <Typography maxWidth="470px" sx={{ fontFamily: "Montserrat",      fontStyle: "normal",      fontWeight: "500",      fontSize: "14px",      lineHeight: "20px",      letterSpacing: "0.2px",  textTransform: "none", mt:1, mx:"auto", textAlign: "center",color: "text_color2.main"}}>Problems trying to resolve the conflict between <br/>the two major realms of Classical physics: Newtonian mechanics </Typography>
           <Stack direction={{sm:"column", md:"row"}} sx={{mt: 6, width: "100%"}}>
               <Stack direction="row" sx={{width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
-                <Card elevation={1} sx={{width: "240px"}}>
-                    <CardContent sx={{display:"flex", flexFlow: "column", px:"40px", py:"35px"}}>
-                        <img width={"48px"}
-                        style={{margin: 'auto'}}
-                            src={`${FeatureIcon1}`}
+              <Card elevation={1} sx={{width: "240px", display:"flex", flexDirection:"column", justifyContent: 'space-between'}}>
+                    <CardContent sx={{display:"flex", flexFlow: "column", p:"30px"}}>
+                        <Typography variant="h5" sx={{color: "text_color.main"}}>A single source 
+of truth</Typography>
+                        <Typography variant="paragraph" sx={{color: "text_color2.main", mt:2}}>Newton thought that 
+light was made up of 
+particles, but then it 
+was discovered </Typography>
+                    </CardContent>
+                    <img width={"100%"}
+                        style={{margin: '0px'}}
+                            src={`${FeatureImg1}`}
                             alt={"FeatureIcon1"}
                             loading="lazy"
-                        />
-                        <Typography variant="h2" sx={{color: "text_color.main", mt: 1, textAlign:"center"}}>972 +</Typography>
-                        <Typography variant="h5" sx={{color: "text_color2.main", mt: 1, textAlign:"center"}}>Consumer Products</Typography>
-                    </CardContent>
+                     />
                 </Card>
-                <Card elevation={1} sx={{width: "240px"}}>
-                    <CardContent sx={{display:"flex", flexFlow: "column", px:"40px", py:"35px"}}>
-                        <img width={"48px"}
-                        style={{margin: 'auto'}}
-                            src={`${FeatureIcon2}`}
-                            alt={"FeatureIcon2"}
-                            loading="lazy"
-                        />
-                        <Typography variant="h2" sx={{color: "text_color.main", mt: 1, textAlign:"center"}}>181 +</Typography>
-                        <Typography variant="h5" sx={{color: "text_color2.main", mt: 1, textAlign:"center"}}>Financial Services </Typography>
+                <Card elevation={1} sx={{width: "240px", display:"flex", flexDirection:"column", justifyContent: 'space-between'}}>
+                    <CardContent sx={{display:"flex", flexFlow: "column", p:"30px"}}>
+                        <Typography variant="h5" sx={{color: "text_color.main"}}>Fastest way to 
+organize</Typography>
+                        <Typography variant="paragraph" sx={{color: "text_color2.main", mt:2}}>“Quantum mechanics” 
+is the description of the 
+behaviour of matter </Typography>
                     </CardContent>
+                    <img width={"100%"}
+                        style={{margin: '0px'}}
+                            src={`${FeatureImg2}`}
+                            alt={"FeatureIcon1"}
+                            loading="lazy"
+                     />
                 </Card>
               </Stack>
-              <Stack direction="row" sx={{width: {sm:"100%", md:"50%"}, justifyContent: "space-evenly"}}>
-                <Card elevation={1} sx={{width: "240px"}}>
-                    <CardContent sx={{display:"flex", flexFlow: "column", px:"40px", py:"35px"}}>
-                        <img width={"48px"}
-                        style={{margin: 'auto'}}
-                            src={`${FeatureIcon3}`}
-                            alt={"FeatureIcon3"}
-                            loading="lazy"
-                        />
-                        <Typography variant="h2" sx={{color: "text_color.main", mt: 1, textAlign:"center"}}>98%</Typography>
-                        <Typography variant="h5" sx={{color: "text_color2.main", mt: 1, textAlign:"center"}}>Environmental</Typography>
+              <Stack direction="row" sx={{width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
+              <Card elevation={1} sx={{width: "240px", display:"flex", flexDirection:"column", justifyContent: 'space-between'}}>
+                    <CardContent sx={{display:"flex", flexFlow: "column", p:"30px"}}>
+                        <Typography variant="h5" sx={{color: "text_color.main"}}>Fastest way to 
+take action</Typography>
+                        <Typography variant="paragraph" sx={{color: "text_color2.main", mt:2}}>They describe a 
+universe consisting of 
+bodies moving</Typography>
                     </CardContent>
+                    <img width={"100%"}
+                        style={{margin: '0px'}}
+                            src={`${FeatureImg3}`}
+                            alt={"FeatureIcon1"}
+                            loading="lazy"
+                     />
                 </Card>
-                <Card elevation={1} sx={{width: "240px"}}>
-                    <CardContent sx={{display:"flex", flexFlow: "column", px:"40px", py:"35px"}}>
-                        <img width={"48px"}
-                        style={{margin: 'auto'}}
-                            src={`${FeatureIcon4}`}
-                            alt={"FeatureIcon4"}
-                            loading="lazy"
-                        />
-                        <Typography variant="h2" sx={{color: "text_color.main", mt: 1, textAlign:"center"}}>746 +</Typography>
-                        <Typography variant="h5" sx={{color: "text_color2.main", mt: 1, textAlign:"center"}}>Business & Finance </Typography>
+                <Card elevation={1} sx={{width: "240px", display:"flex", flexDirection:"column", justifyContent: 'space-between'}}>
+                    <CardContent sx={{display:"flex", flexFlow: "column", p:"30px"}}>
+                        <Typography variant="h5" sx={{color: "text_color.main"}}>Work better 
+together</Typography>
+                        <Typography variant="paragraph" sx={{color: "text_color2.main", mt:2}}>They finally obtained 
+a consistent description 
+of the behaviour</Typography>
                     </CardContent>
+                    <img width={"100%"}
+                        style={{margin: '0px'}}
+                            src={`${FeatureImg4}`}
+                            alt={"FeatureIcon1"}
+                            loading="lazy"
+                     />
                 </Card>
               </Stack>
           </Stack>
