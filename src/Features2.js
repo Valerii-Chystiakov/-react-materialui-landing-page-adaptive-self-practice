@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography'
 import Stack from '@mui/material/Stack'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
 import FeatureImg1 from "./img/Features2/FeatureImg1.jpg"
 import FeatureImg2 from "./img/Features2/FeatureImg2.jpg"
 import FeatureImg3 from "./img/Features2/FeatureImg3.jpg"
@@ -15,12 +14,12 @@ import FeatureImg4 from "./img/Features2/FeatureImg4.jpg"
 export default class Features2 extends Component {
   render() {
     return (
-      <Container maxWidth="1046px" sx={{mt: 15, pb: 10, backgroundColor: "#FAFAFA" }}>
+      <Container maxWidth="1046px" sx={{mt: 15, backgroundColor: "#FAFAFA" }}>
         <Container>
           <Typography variant="h2" sx={{textAlign: "center",color: "text_color.main"}}>Practice Advice</Typography>
           <Typography maxWidth="470px" sx={{ fontFamily: "Montserrat",      fontStyle: "normal",      fontWeight: "500",      fontSize: "14px",      lineHeight: "20px",      letterSpacing: "0.2px",  textTransform: "none", mt:1, mx:"auto", textAlign: "center",color: "text_color2.main"}}>Problems trying to resolve the conflict between <br/>the two major realms of Classical physics: Newtonian mechanics </Typography>
           <Stack direction={{sm:"column", md:"row"}} sx={{mt: 6, width: "100%"}}>
-              <Stack direction="row" sx={{width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
+              <Stack spacing={2} direction="row" sx={{width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
               <Card elevation={1} sx={{width: "240px", display:"flex", flexDirection:"column", justifyContent: 'space-between'}}>
                     <CardContent sx={{display:"flex", flexFlow: "column", p:"30px"}}>
                         <Typography variant="h5" sx={{color: "text_color.main"}}>A single source 
@@ -53,7 +52,7 @@ behaviour of matter </Typography>
                      />
                 </Card>
               </Stack>
-              <Stack direction="row" sx={{width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
+              <Stack spacing={2} direction="row" sx={{width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
               <Card elevation={1} sx={{width: "240px", display:"flex", flexDirection:"column", justifyContent: 'space-between'}}>
                     <CardContent sx={{display:"flex", flexFlow: "column", p:"30px"}}>
                         <Typography variant="h5" sx={{color: "text_color.main"}}>Fastest way to 

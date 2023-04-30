@@ -7,6 +7,7 @@ import HeadContainer from './HeadContainer';
 import background from "./background.png"
 import Features from './Features';
 import Features2 from './Features2';
+import About from './About';
 
 
 
@@ -154,6 +155,7 @@ export default function App() {
           </Container>
           <Features/>
           <Features2/>
+          <About/>
         </div>
     </ThemeProvider>
     
