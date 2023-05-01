@@ -19,7 +19,7 @@ export default class Contact extends Component {
           <Typography variant="h2" sx={{pt: 10,textAlign: "center",color: "text_color.main"}}>Get In Touch</Typography>
           <Typography maxWidth="510px" sx={{ fontFamily: "Montserrat",      fontStyle: "normal",      fontWeight: "500",      fontSize: "14px",      lineHeight: "20px",      letterSpacing: "0.2px",  textTransform: "none", mt:1, mx:"auto", textAlign: "center",color: "text_color2.main"}}>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</Typography>
               <Stack spacing={0} direction={{sm:"column",md:"row"}} sx={{mt:10, alignItems:"center", pb: "150px", justifyContent: "center"}}>
-                <Card elevation={1} sx={{width: "330px"}}>
+                <Card elevation={1} sx={{width: {xs:"320px",sm:"330px"}}}>
                         <CardContent sx={{display:"flex", flexFlow: "column", px:"40px", py:"50px"}}>
                             <img width={"72px"}
                             style={{margin: 'auto'}}
@@ -35,7 +35,7 @@ export default class Contact extends Component {
                             </Button>
                         </CardContent>
                     </Card>
-                    <Card elevation={1} sx={{width: "330px", backgroundColor:"bg_color_dark.main"}}>
+                    <Card elevation={1} sx={{width: {xs:"320px",sm:"330px"}, backgroundColor:"bg_color_dark.main"}}>
                         <CardContent sx={{display:"flex", flexFlow: "column", px:"40px", py:"80px"}}>
                             <img width={"72px"}
                             style={{margin: 'auto'}}
@@ -51,7 +51,7 @@ export default class Contact extends Component {
                             </Button>
                         </CardContent>
                     </Card>
-                    <Card elevation={1} sx={{width: "330px"}}>
+                    <Card elevation={1} sx={{width: {xs:"320px",sm:"330px"}}}>
                         <CardContent sx={{display:"flex", flexFlow: "column", px:"40px", py:"50px"}}>
                             <img width={"72px"}
                             style={{margin: 'auto'}}
