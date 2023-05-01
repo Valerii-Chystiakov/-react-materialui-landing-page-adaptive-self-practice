@@ -19,7 +19,7 @@ export default class Features extends Component {
           <Typography variant="h2" sx={{pt: 9,textAlign: "center",color: "text_color.main"}}>Designing Better Experience</Typography>
           <Typography maxWidth="510px" sx={{ fontFamily: "Montserrat",      fontStyle: "normal",      fontWeight: "500",      fontSize: "14px",      lineHeight: "20px",      letterSpacing: "0.2px",  textTransform: "none", mt:1, mx:"auto", textAlign: "center",color: "text_color2.main"}}>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</Typography>
           <Stack direction={{sm:"column", md:"row"}} sx={{mt: 6, width: "100%"}}>
-              <Stack direction="row" spacing={2} sx={{width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
+              <Stack direction={{xs:"column",sm:"row"}} spacing={2} sx={{alignItems:{xs:"center",sm:"stretch"},width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
                 <Card elevation={1} sx={{width: "240px"}}>
                     <CardContent sx={{display:"flex", flexFlow: "column", px:"40px", py:"35px"}}>
                         <img width={"48px"}
@@ -45,7 +45,7 @@ export default class Features extends Component {
                     </CardContent>
                 </Card>
               </Stack>
-              <Stack direction="row" spacing={2} sx={{width: {sm:"100%", md:"50%"}, mb: 4 ,justifyContent: "space-evenly"}}>
+              <Stack direction={{xs:"column",sm:"row"}} spacing={2} sx={{alignItems:{xs:"center",sm:"stretch"},width: {sm:"100%", md:"50%"}, mb: 4 ,justifyContent: "space-evenly"}}>
                 <Card elevation={1} sx={{width: "240px"}}>
                     <CardContent sx={{display:"flex", flexFlow: "column", px:"40px", py:"35px"}}>
                         <img width={"48px"}

@@ -19,7 +19,7 @@ export default class Features2 extends Component {
           <Typography variant="h2" sx={{textAlign: "center",color: "text_color.main"}}>Practice Advice</Typography>
           <Typography maxWidth="470px" sx={{ fontFamily: "Montserrat",      fontStyle: "normal",      fontWeight: "500",      fontSize: "14px",      lineHeight: "20px",      letterSpacing: "0.2px",  textTransform: "none", mt:1, mx:"auto", textAlign: "center",color: "text_color2.main"}}>Problems trying to resolve the conflict between <br/>the two major realms of Classical physics: Newtonian mechanics </Typography>
           <Stack direction={{sm:"column", md:"row"}} sx={{mt: 6, width: "100%"}}>
-              <Stack spacing={2} direction="row" sx={{width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
+              <Stack spacing={2} direction={{xs:"column",sm:"row"}} sx={{alignItems:{xs:"center",sm:"stretch"},width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
               <Card elevation={1} sx={{width: "240px", display:"flex", flexDirection:"column", justifyContent: 'space-between'}}>
                     <CardContent sx={{display:"flex", flexFlow: "column", p:"30px"}}>
                         <Typography variant="h5" sx={{color: "text_color.main"}}>A single source 
@@ -52,7 +52,7 @@ behaviour of matter </Typography>
                      />
                 </Card>
               </Stack>
-              <Stack spacing={2} direction="row" sx={{width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
+              <Stack spacing={2} direction={{xs:"column",sm:"row"}} sx={{alignItems:{xs:"center",sm:"stretch"},width: {sm:"100%", md:"50%"}, mb: 4, justifyContent: "space-evenly"}}>
               <Card elevation={1} sx={{width: "240px", display:"flex", flexDirection:"column", justifyContent: 'space-between'}}>
                     <CardContent sx={{display:"flex", flexFlow: "column", p:"30px"}}>
                         <Typography variant="h5" sx={{color: "text_color.main"}}>Fastest way to 
