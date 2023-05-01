@@ -8,7 +8,7 @@ import background from "./background.png"
 import Features from './Features';
 import Features2 from './Features2';
 import About from './About';
-
+import Clients from "./Clients"
 
 
 
@@ -156,6 +156,7 @@ export default function App() {
           <Features/>
           <Features2/>
           <About/>
+          <Clients/>
         </div>
     </ThemeProvider>
     
