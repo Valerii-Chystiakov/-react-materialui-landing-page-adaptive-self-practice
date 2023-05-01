@@ -9,7 +9,7 @@ import Features from './Features';
 import Features2 from './Features2';
 import About from './About';
 import Clients from "./Clients"
-
+import Contact from './Contact';
 
 
 const theme = createTheme({
@@ -157,8 +157,8 @@ export default function App() {
           <Features2/>
           <About/>
           <Clients/>
+          <Contact/>
         </div>
     </ThemeProvider>
-    
   );
 }
