@@ -67,7 +67,8 @@ export default class Clients extends Component {
                         component="form"
                         sx={{ p: '1px 2px ', display: 'flex', flexDirection:{xs:"column",sm:"row"},alignItems: 'center', width: {sm:"100%", md:"50%"},maxWidth:"500px", margin:{sm:"auto", md:"0px"} }}>
                             <TextField variant='filled'
-                                sx={{ ml: 0, flex: 1 }}
+                                
+                                sx={{ ml: 0, flex: 1, width:"100%" }}
                                 label="Your Email"
                                 inputProps={{ 'aria-label': 'enter your email to subscribe' }}
                             />

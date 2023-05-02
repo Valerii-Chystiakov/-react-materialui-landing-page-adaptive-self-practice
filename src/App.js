@@ -10,7 +10,7 @@ import Features2 from './Features2';
 import About from './About';
 import Clients from "./Clients"
 import Contact from './Contact';
-
+import Footer from './Footer';
 
 const theme = createTheme({
   palette: {
@@ -158,6 +158,7 @@ export default function App() {
           <About/>
           <Clients/>
           <Contact/>
+          <Footer/>
         </div>
     </ThemeProvider>
   );
