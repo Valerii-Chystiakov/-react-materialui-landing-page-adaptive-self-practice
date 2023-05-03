@@ -341,8 +341,11 @@ export default function Footer() {
             <Container maxWidth="1046px" sx={{backgroundColor: "#FAFAFA"}}>
                 <Container>
                     <Stack py={"25px"} direction={"row"} flexWrap={"wrap"} justifyContent="space-between" alignItems={"center"}>
-                        <Typography variant="h6" color="text_color2.main">Made With Love By Figmaland All Right Reserved</Typography>
-                        <List component="nav" direction={"row"} sx={{width:"160px", display:"flex", justifyContent:"flex-end"}}>
+                        <Stack>                        <Typography variant="h6" color="text_color2.main">Template Made By Figmaland All Right Reserved</Typography>
+                        <Typography variant="h6" color="text_color2.main">React Frontend Coding Made by Zork</Typography>
+
+</Stack>  
+                                              <List component="nav" direction={"row"} sx={{width:"160px", display:"flex", justifyContent:"flex-end"}}>
                             <ListItem button disablePadding>
                                     <FacebookIcon sx={{color:"#335BF5", fontSize:"24px"}}/>
                             </ListItem>
