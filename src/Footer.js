@@ -43,6 +43,7 @@ export default function Footer() {
     return (
         <div>
             <Container maxWidth="1046px" sx={{backgroundColor: "#FAFAFA",mb:"40px"}}>
+                <Container>
                 <Stack mt={"40px"} direction={{xs:"column", sm:"row"}} justifyContent={"space-between"}>
                 <Stack>
                     <Typography sx={{width:"100%"}} variant="h3" color="text_color.main">Consulting Agency For Your Business</Typography>
@@ -52,6 +53,7 @@ export default function Footer() {
                     <Typography sx={{minWidth:"83px"}} variant="btn_text" color="text_color_light.main">Contact Us</Typography>
                 </Button>
                 </Stack>
+                </Container>
             </Container>
             <Container maxWidth="1046px" sx={{backgroundColor: "secondary2.main"}}>
                 <Container>
